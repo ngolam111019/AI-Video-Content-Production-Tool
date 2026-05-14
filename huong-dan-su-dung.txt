@@ -1,0 +1,10 @@
+Bước 1: New Terminal at folder AutoVideo
+
+Bước 2: excute lệnh bên dưới:
+source .venv/bin/activate;
+
+Bước 3: excute lệnh bên dưới:
+python3 main.py
+
+
+source .venv/bin/activate;
