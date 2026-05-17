@@ -2,9 +2,9 @@ import os
 from dotenv import load_dotenv
 
 # --- CẤU HÌNH HỆ THỐNG ---
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# Tìm file .env ở thư mục gốc (chứ không phải trong thư mục core)
-load_dotenv(os.path.join(BASE_DIR, "..", ".env"))
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+# Tìm file .env ở thư mục gốc AutoVideo
+load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 BASE_VIDEOS_DIR = os.path.abspath(os.path.join(BASE_DIR, "..", "videos"))
 FPS = 30
